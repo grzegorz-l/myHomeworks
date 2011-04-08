@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical">
+<ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:scrollbars="vertical"
+	android:scrollbarAlwaysDrawVerticalTrack="true">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Tytul"
+		android:textSize="20dip"
+		android:paddingTop="3dip">
+	</TextView>
+	<EditText
+		android:id="@+id/tytul"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</EditText>
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Opis"
+		android:textSize="20dip"
+		android:paddingTop="3dip">
+	</TextView>
+	<EditText 
+		android:id="@+id/opis" 
+		android:layout_width="fill_parent" 
+		android:layout_height="150dip"
+		android:ellipsize="start"
+		android:gravity="top">
+	</EditText>
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Data"
+		android:textSize="20dip"
+		android:paddingTop="3dip">
+	</TextView>
+
+	<DatePicker
+		android:id="@+id/date_picker01"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	</DatePicker>
+	<Button
+		android:id="@+id/dodaj"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Dodaj zadanie">
+	</Button>
+	</LinearLayout>
+</ScrollView>
+</LinearLayout>
